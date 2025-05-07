@@ -1,3 +1,4 @@
+import { Header, Nav } from "@/components";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +28,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="w-screen h-screen bg-gray-200 p-8">
+          <main className="bg-gray-300 w-full rounded-md p-8 flex shadow-2xl">
+            <div className="w-full flex rounded-sm overflow-hidden p-4 bg-gray-200 shadow-lg">
+              <div className="">
+                <Nav />
+              </div>
+              <div className="w-full">
+                <Header />
+                {children}
+              </div>
+            </div>
+          </main>
+        </div>
       </body>
     </html>
   );
