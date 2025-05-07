@@ -10,6 +10,7 @@ export const Nav = () => {
       {items.map((item) => {
         return (
           <Link
+            key={item.label}
             href={item.url}
             className="block p-8 w-full border-b text-sm border-gray-300 text-center cursor-pointer hover:shadow-2xl transition-all duration-300 "
           >
