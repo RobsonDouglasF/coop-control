@@ -1,0 +1,27 @@
+import { EPI_DATA } from "../../data";
+
+export function ListView() {
+  return (
+    <table className="w-full divide-y-2 divide-gray-300">
+      <thead className="bg-blue-50 font-bold">
+        <tr>
+          <td className="px-3 py-1">EPI</td>
+          <td className="px-3 py-1">Preço</td>
+          <td className="px-3 py-1">Tamanho</td>
+        </tr>
+      </thead>
+
+      <tbody className="divide-y divide-gray-300 ">
+        {EPI_DATA.map((epi) => {
+          return (
+            <tr key={epi.id} className="">
+              <td className="px-3 py-1">{epi.nome}</td>
+              <td className="px-3 py-1">{epi.preco}</td>
+              <td className="px-3 py-1">{epi.tamanho}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}

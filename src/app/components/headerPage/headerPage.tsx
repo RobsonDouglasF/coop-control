@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "../button";
 
 export const Header = () => {
   return (
@@ -9,9 +10,7 @@ export const Header = () => {
           placeholder="Buscar"
           className="w-full bg-white px-3 rounded-md border border-blue-400 max-w-2/3"
         />
-        <button className="bg-green-600 px-4 rounded-md cursor-pointer hover:bg-green-700 transition-all duration-200">
-          Pesquisar
-        </button>
+        <Button>Pesquisar</Button>
       </div>
       <Image
         className="cursor-pointer"
