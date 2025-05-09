@@ -1,7 +1,8 @@
-import { Header, Nav } from "@/components";
+import { Header, Nav } from "@/app/components";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,9 +35,11 @@ export default function RootLayout({
               <div className="">
                 <Nav />
               </div>
-              <div className="w-full">
+              <div className="w-full flex flex-col">
                 <Header />
-                {children}
+                <div className="bg-white rounded-sm ml-3 mt-3 h-full">
+                  {children}
+                </div>
               </div>
             </div>
           </main>

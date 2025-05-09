@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { items } from "./nav.constants";
+import { items } from './navConstants';
+
 
 export const Nav = () => {
   return (
