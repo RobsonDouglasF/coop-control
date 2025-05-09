@@ -1,4 +1,6 @@
-export const EPI_DATA = [
+import { EPI } from "@/model";
+
+export const EPI_DATA: EPI[] = [
   {
     id: 1,
     nome: "Botina",

@@ -1,6 +1,6 @@
-import { EPI_DATA } from "../../data";
+import { ListViewProps } from "./list.types";
 
-export function ListView() {
+export function ListView(props: ListViewProps) {
   return (
     <table className="w-full divide-y-2 divide-gray-300">
       <thead className="bg-blue-50 font-bold">
@@ -12,7 +12,7 @@ export function ListView() {
       </thead>
 
       <tbody className="divide-y divide-gray-300 ">
-        {EPI_DATA.map((epi) => {
+        {props.data.map((epi) => {
           return (
             <tr key={epi.id} className="">
               <td className="px-3 py-1">{epi.nome}</td>
