@@ -2,7 +2,7 @@ import { EPI_SIZES, FORM_EPI_INPUTS } from "./data";
 
 export function FormView() {
   return (
-    <form className="flex border-t border-gray-300 p-3 gap-2 ">
+    <form className="flex border-t border-gray-300 p-3 gap-2">
       {FORM_EPI_INPUTS.map((subTitulo, id) => {
         return (
           <input
